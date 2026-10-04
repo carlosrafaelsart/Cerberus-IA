@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.CerberusIA" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/text_dark</item>
+        <item name="android:windowBackground">@color/dark_bg</item>
+        <item name="android:textColorPrimary">@color/text_white</item>
+    </style>
+</resources>
