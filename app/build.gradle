@@ -3,15 +3,15 @@ plugins {
 }
 
 android {
-    namespace 'com.carlosart.cerberusia'
+    namespace 'com.carlosrafaelsart.cerberusia'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.carlosart.cerberusia"
+        applicationId "com.carlosrafaelsart.cerberusia"
         minSdk 24
         targetSdk 34
         versionCode 1
-        versionName "3.0"
+        versionName "1.0"
     }
 
     buildTypes {
@@ -19,6 +19,7 @@ android {
             minifyEnabled false
         }
     }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
@@ -26,7 +27,6 @@ android {
 }
 
 dependencies {
-    implementation 'androidx.appcompat:appcompat:1.7.0'
-    implementation 'com.google.android.material:material:1.12.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
 }
