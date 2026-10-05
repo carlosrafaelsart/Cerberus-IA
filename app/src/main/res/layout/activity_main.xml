@@ -1,63 +1,26 @@
+
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#12181B"
-    android:padding="12dp">
+    android:padding="16dp"
+    android:background="#121212">
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:padding="8dp"
-        android:background="#1F2937"
-        android:layout_marginBottom="12dp">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Cerberus IA"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="#32E0C4"/>
-
-        <Button
-            android:id="@+id/btn_new_chat"
-            android:layout_width="wrap_content"
-            android:layout_height="36dp"
-            android:text="Nuevo"
-            android:backgroundTint="#32E0C4"
-            android:textColor="#000"
-            android:layout_marginEnd="8dp"/>
-
-        <ImageButton
-            android:id="@+id/btn_gen_image"
-            android:layout_width="36dp"
-            android:layout_height="36dp"
-            android:src="@drawable/ic_settings"
-            android:backgroundTint="#32E0C4"
-            android:tint="#000"
-            android:layout_marginEnd="8dp"/>
-
-        <ImageButton
-            android:id="@+id/btn_settings"
-            android:layout_width="36dp"
-            android:layout_height="36dp"
-            android:src="@drawable/ic_settings"
-            android:backgroundTint="#32E0C4"
-            android:tint="#000"/>
-    </LinearLayout>
+        android:text="Cerberus IA"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
 
     <ScrollView
-        android:id="@+id/scroll_chat"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:fillViewport="true">
+        android:layout_marginBottom="16dp">
 
         <LinearLayout
             android:id="@+id/chat_container"
@@ -69,21 +32,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:layout_marginTop="8dp"
-        android:background="#1F2937"
-        android:padding="8dp"
-        android:layout_marginBottom="8dp">
-
-        <ImageButton
-            android:id="@+id/btn_plus"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/ic_settings"
-            android:backgroundTint="#32E0C4"
-            android:tint="#000"
-            android:layout_marginEnd="8dp"/>
+        android:orientation="horizontal">
 
         <EditText
             android:id="@+id/input_message"
@@ -91,19 +40,24 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:hint="Escribe tu mensaje..."
-            android:background="#2D3748"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#9CA3AF"
+            android:background="#FFFFFF"
             android:padding="12dp"
-            android:minHeight="48dp"/>
+            android:layout_marginEnd="8dp"/>
 
-        <ImageButton
+        <Button
             android:id="@+id/btn_send"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:src="@drawable/ic_settings"
-            android:backgroundTint="#32E0C4"
-            android:tint="#000"
-            android:layout_marginStart="8dp"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enviar"
+            android:backgroundTint="#6200EE"/>
     </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ajustes"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#03DAC6"/>
+
 </LinearLayout>
