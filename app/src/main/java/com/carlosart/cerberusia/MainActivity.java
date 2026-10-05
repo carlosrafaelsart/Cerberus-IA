@@ -1,4 +1,5 @@
-package com.carlosart.cerberusia;
+package com.carlosrafaelsart.cerberusia;
+
 
 import android.app.Activity;
 import android.content.Intent;
