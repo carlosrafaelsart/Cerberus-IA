@@ -3,93 +3,37 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#12181B"
-    android:padding="20dp">
+    android:padding="16dp"
+    android:background="#121212">
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ajustes ⚙️"
+        android:text="Ajustes"
         android:textSize="24sp"
-        android:textStyle="bold"
-        android:textColor="#32E0C4"
+        android:textColor="#FFFFFF"
         android:layout_marginBottom="24dp"/>
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="URL de la API"
-        android:textColor="#9CA3AF"
-        android:textSize="14sp"/>
-
-    <EditText
-        android:id="@+id/et_api_url"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textUri"
-        android:background="#1F2937"
-        android:textColor="#FFFFFF"
-        android:padding="14dp"
-        android:layout_marginBottom="16dp"/>
-
-    <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Clave API"
-        android:textColor="#9CA3AF"
-        android:textSize="14sp"/>
-
-    <EditText
-        android:id="@+id/et_api_key"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:background="#1F2937"
-        android:textColor="#FFFFFF"
-        android:padding="14dp"
-        android:layout_marginBottom="16dp"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Modelo"
-        android:textColor="#9CA3AF"
-        android:textSize="14sp"/>
-
-    <EditText
-        android:id="@+id/et_model"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="text"
-        android:background="#1F2937"
-        android:textColor="#FFFFFF"
-        android:padding="14dp"
-        android:layout_marginBottom="24dp"/>
-
-    <Button
-        android:id="@+id/btn_save"
-        android:layout_width="match_parent"
-        android:layout_height="52dp"
-        android:text="Guardar ✅"
-        android:backgroundTint="#32E0C4"
-        android:textColor="#000"
-        android:textSize="16sp"
-        android:layout_marginBottom="12dp"/>
-
-    <Button
-        android:id="@+id/btn_reset"
-        android:layout_width="match_parent"
-        android:layout_height="52dp"
-        android:text="Restablecer por defecto"
-        android:backgroundTint="#374151"
         android:textColor="#FFFFFF"
         android:textSize="16sp"/>
 
-    <TextView
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="\nCreada por CarlosArt © 2026"
-        android:textColor="#6B7280"
-        android:gravity="center"
-        android:layout_marginTop="24dp"/>
+        android:hint="Escribe tu clave API"
+        android:background="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:backgroundTint="#6200EE"/>
+
 </LinearLayout>
