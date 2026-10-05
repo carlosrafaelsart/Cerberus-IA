@@ -1,6 +1,8 @@
 plugins {
-    id 'com.android.application'
+    id 'com.android.application' version '8.2.2' apply true
+    // o la versión exacta que estés utilizando en tu entorno
 }
+
 android {
     namespace 'com.carlosrafaelsart.cerberusia'
     compileSdk 34
